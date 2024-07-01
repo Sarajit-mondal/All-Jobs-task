@@ -156,7 +156,7 @@
       //speedup and restar
      
     
-
+//control car with up down left right keyword
       function keyDown(e) {
         e.preventDefault();
         keys[e.key] = true;
@@ -200,6 +200,7 @@
           " <br> press here to restart the game.";
       }
 
+      // enemyCar car animation 
       function moveEnemy(myCar) {
         let enemyCarList = document.querySelectorAll(".enemyCar");
         enemyCarList.forEach(function (enemyCar) {
