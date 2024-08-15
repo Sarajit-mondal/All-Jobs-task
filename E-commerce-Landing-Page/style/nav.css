@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #1d3557; /* Dark Blue or Navy */
+  color: white;
+
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-left .navbar-logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+.navbar-center {
+  display: flex;
+  gap: 20px;
+}
+
+.navbar-center .nav-link {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 8px 12px;
+  transition: background-color 0.3s;
+}
+
+.navbar-center .nav-link:hover {
+  background-color: #00b4d8; /* Bright Cyan */
+  border-radius: 5px;
+}
+
+.navbar-right .profile-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #f4a261; /* Vibrant Orange */
+  cursor: pointer;
+}
+
+.navbar-right .profile-image:hover {
+  border-color: #00b4d8; /* Bright Cyan */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar-center {
+    display: none;
+  }
+
+  .navbar-left {
+    flex-grow: 1;
+  }
+
+  .navbar-right .profile-image {
+    width: 35px;
+    height: 35px;
+  }
+}

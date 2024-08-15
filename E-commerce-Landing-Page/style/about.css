@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+/* Header Section */
+.header {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #1d3557; /* Dark Blue */
+  color: white;
+}
+
+.header h1 {
+  margin-bottom: 10px;
+  font-size: 36px;
+}
+
+.header p {
+  font-size: 18px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Section Styles */
+section {
+  padding: 50px 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+section h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #1d3557; /* Dark Blue */
+}
+
+section p,
+section ul {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+section ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+/* Team Section */
+.team {
+  text-align: center;
+}
+
+.team-members {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.team-member {
+  margin: 20px;
+  max-width: 200px;
+  text-align: center;
+}
+
+.team-member img {
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  border: 3px solid #f4a261; /* Vibrant Orange */
+  transition: transform 0.3s ease;
+}
+
+.team-member img:hover {
+  transform: scale(1.05);
+}
+
+.team-member h3 {
+  margin-top: 15px;
+  font-size: 20px;
+  color: #1d3557; /* Dark Blue */
+}
+
+.team-member p {
+  font-size: 16px;
+  color: #00b4d8; /* Bright Cyan */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .team-members {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .team-member {
+    max-width: 100%;
+  }
+}

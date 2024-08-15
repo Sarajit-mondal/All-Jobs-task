@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Commerce Landing Page</title>
+
+    <!-- style link -->
+    <link rel="stylesheet" href="style/common.css" />
+    <link rel="stylesheet" href="style/sliderStyle.css" />
+    <link rel="stylesheet" href="style/products.css" />
+    <link rel="stylesheet" href="style/nav.css" />
+    <link rel="stylesheet" href="style/filterProducts.css" />
+    <link rel="stylesheet" href="style/review.css" />
+    <link rel="stylesheet" href="style/newslatter.css" />
+    <link rel="stylesheet" href="style/pagination.css" />
+    <link rel="stylesheet" href="style/products_cart.css" />
+    <!-- swipper slider link -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <!-- nav bar -->
+      <nav class="navbar">
+        <div class="navbar-left">
+          <a href="#" class="navbar-logo">LOGO</a>
+        </div>
+        <div class="navbar-center">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="allProducts.html" class="nav-link">All Products</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+        </div>
+        <div class="navbar-right">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRij6dtiHizH96qpCOe8WeXXP3yLyQJkPdGVg&s"
+            alt="Profile"
+            class="profile-image"
+          />
+        </div>
+      </nav>
+      <!-- nav bar -->
+
+      <!-- hero section sart-->
+      <section>
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <!-- slider one -->
+            <div class="swiper-slide">
+              <div class="swiper-slide1">
+                <div>
+                  <h1>Body Lotion</h1>
+                  <h2>
+                    His daily moisturizing body lotion is infused with
+                    plant-based milks centella, rice, and linseed to condition
+                    and strengthen the skin’s barrier. It has a lightweight
+                    texture that leaves a velvety soft feel that won’t cling to
+                    clothes while offering deep hydration that lasts all day.
+                  </h2>
+                  <button>CTA</button>
+                </div>
+                <img src="./image/add1.png" alt="" />
+              </div>
+            </div>
+            <!-- slider two -->
+            <div class="swiper-slide">
+              <div class="swiper-slide1">
+                <div>
+                  <h1>Xiaomi Redmi Note 13 Pro 5G review</h1>
+                  <h2>
+                    Every year, millions flock online and in stores to buy the
+                    next Redmi Note smartphone. This year, we imagine it will be
+                    no different with the latest Redmi Note 13 Pro as it is once
+                    again looking like one of the best "bang for the buck"
+                    phones on the market.
+                  </h2>
+                  <button>CTA</button>
+                </div>
+                <img src="./image/add2.png" alt="" />
+              </div>
+            </div>
+            <!-- slider three -->
+            <div class="swiper-slide">
+              <div class="swiper-slide1">
+                <div>
+                  <h1>Rapoo H120 USB Wired Headphone</h1>
+                  <h2>
+                    High quality USB digital audio output The multiple functions
+                    of the remote Microphone noise reduction Smooth HD voice
+                    call
+                  </h2>
+                  <button>CTA</button>
+                </div>
+                <img src="./image/add3.png" alt="" />
+              </div>
+            </div>
+            <!-- slider Four -->
+            <div class="swiper-slide">
+              <div class="swiper-slide1">
+                <div>
+                  <h1>MSI Modern 14 C12M Core i3 12th Gen 14" FHD Laptop</h1>
+                  <h2>
+                    Key Features MPN: 9S7-14J112-871-STL Model: Modern 14 C12M
+                    Processor: Intel Core i3-1215U (10M Cache, 3.30 GHz, up to
+                    4.40 GHz) RAM: 8GB 3200MHz, Storage: 512GB SSD Display: 14"
+                    FHD (1920 x 1080) Feature: Backlit Keyboard, Type-C
+                  </h2>
+                  <button>CTA</button>
+                </div>
+                <img src="./image/add4.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+      <!-- hero section end-->
+    </header>
+
+    <main>
+      <!-- all products section  sart-->
+      <!-- products filter and sort -->
+       <h1 class="title">All Products</h1>
+      <div class="filter-controls">
+        <h2>Filter Products</h2>
+        <div class="filter-category">
+          <label for="category">Category:</label>
+          <select id="category" onchange="handleFilterChange('category')">
+            <option value="all">All</option>
+          
+          </select>
+        </div>
+        <div class="filter-price">
+          <label for="price">Price Range:</label>
+          <select id="price" onchange="handleFilterChange('price')">
+            <option value="all">All</option>
+            <option value="0-50">$0 - $50</option>
+            <option value="50-100">$50 - $100</option>
+            <option value="100-200">$100 - $200</option>
+          </select>
+        </div>
+        <div class="filter-rating">
+          <label for="rating">Rating:</label>
+          <select id="rating" onchange="handleFilterChange('stars')">
+            <option value="all">All</option>
+            <option value="4">4+ Stars</option>
+            <option value="3">3+ Stars</option>
+            <option value="2">2+ Stars</option>
+          </select>
+        </div>
+      </div>
+      <section class="parductAndCart">
+        <div class="product_container">
+          
+        </div>
+        <!-- cart  -->
+        <div class="products_cart">
+          <h4>Buy $200 get 10% off</h4>
+          <ul id="cart-items">
+            <!-- Cart items will be dynamically added here -->
+          </ul>
+          <hr>
+          <h4>Total: <span id="total-price">$0.00</span></h4>
+        </div>
+        
+        <!-- product one -->
+      </section>
+       <!-- pagination -->
+       <div class="allbutton">
+        <div class="flex w-full justify-between px-5">
+            <button id="prevBtn" class="pagination-btn"><</button>
+            <div class="flex gap-2" id="pageButtons">
+                <!-- Page numbers will be dynamically generated here -->
+            </div  >
+            <div class="flex">
+                <select id="itemsPerPage" class="mr-5">
+                    
+                    <option value="10">10</option>
+                    <option value="15">15</option>
+                    <option value="20">20</option>
+                </select>
+                <button id="nextBtn" class="pagination-btn">></button>
+            </div>
+        </div>
+    </div>
+       <!-- pagination -->
+
+      <!-- all products section  end-->
+      <!-- all user review -->
+      <section class="reviews">
+        <h1 class="title">Product Reviews</h1>
+        <div class="reviews-container" id="reviews-container"></div>
+      </section>
+      <!-- all user review -->
+
+      <!-- newslatter  -->
+      <section>
+        <div class="signup-container">
+          <h2>Sign Up for Our Newsletter</h2>
+          <form id="signup-form">
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required />
+            <span id="email-error" class="error-message"></span>
+            <button type="submit">Subscribe</button>
+          </form>
+          <div id="success-message" class="success-message"></div>
+        </div>
+      </section>
+      <!-- newslatter  -->
+    </main>
+
+    <!-- script link -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script src="js/slider.js"></script>
+    <!-- product js -->
+    <script src="js/product.js"></script>
+    <script src="js/reviews.js"></script>
+    <script src="js/newslatter.js"></script>
+  </body>
+</html>

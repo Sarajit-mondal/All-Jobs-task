@@ -1,0 +1,66 @@
+.reviews-container {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  cursor:move;
+  scroll-behavior: smooth;
+}
+
+.reviews{
+  padding: 0px 16px;
+  margin: 20px 0px;
+}
+.reviews h1{
+ color:black;
+ margin-bottom: 10px;
+}
+.review-card {
+  min-width: 200px;
+
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.review-card h3 {
+  margin-top: 0;
+  font-size: 18px;
+}
+
+.review-card p {
+  margin: 5px 0;
+}
+
+.review-date,
+.reviewer-name {
+  font-size: 14px;
+  color: #666666;
+}
+
+.review-rating {
+  color: #f4a261;
+  font-weight: bold;
+}
+
+/* Additional styling to handle overflow */
+.reviews-wrapper {
+  max-height: 400px; /* Adjust height as needed */
+  overflow-y: scroll;
+  padding-right: 10px; /* Adjust scrollbar width */
+}
+
+.reviews-wrapper::-webkit-scrollbar {
+  width: 8px;
+}
+
+.reviews-wrapper::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 4px;
+}
+
+.reviews-wrapper::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}

@@ -1,0 +1,106 @@
+.allbutton {
+    margin-bottom: 50px;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.gap-2 {
+    gap: 10px;
+}
+
+.px-5 {
+    padding: 0 20px;
+}
+
+.pagination-btn {
+    padding: 8px 16px;
+    width: 100px;
+    background-color: #1D3557;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.pagination-btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.mr-5 {
+    margin-right: 20px;
+}
+
+#pageButtons button {
+    padding: 8px 12px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+}
+
+#pageButtons .active {
+    background-color: #00B4D8;
+    color: white;
+}
+
+#pageButtons button:hover:not(.active) {
+    background-color: #F1FAEE;
+    color: #1D3557;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .flex {
+        
+    }
+
+    .gap-2 {
+        gap: 5px;
+    }
+
+    .pagination-btn,
+    #pageButtons button {
+        width: auto;
+        padding: 5px ;
+    }
+
+    .mr-5 {
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 550px) {
+    .pagination-btn,
+    #pageButtons button {
+        padding: 6px 8px;
+        font-size: 14px;
+    }
+
+    .flex {
+        width: 100%;
+    }
+
+    .w-full {
+        width: 100%;
+    }
+
+    .px-5 {
+        padding: 0 10px;
+    }
+
+    .allbutton {
+        margin-bottom: 30px;
+    }
+}
